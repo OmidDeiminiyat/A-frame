@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    
+    <!-- import AR.js for A-Frame -->
+    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script> -->
+
+  </head>
+  <!-- A-Frame is a web framework for building virtual reality (VR) experiences. A-Frame is based on top of HTML, making it simple to get started. -->
+  <!-- i Body jeg har en a-scene og i a-scene lægger 4 elementer og giver jeg dem position, rotation og color-->
+  <!-- AR.js is Augmented Reality is the technology that makes possible to overlay content on the real world. the 'reality' is captured from one or more cameras and then shown on the device display, adding some kind of content on top of it.  -->
+  <!-- AR.js has 3 types: Image Tracking. Location Based AR. Marker Tracking.-->
+  <body>
+
+
+    <a-scene background="color: #ECECEC">
+      <a-assets>
+        <a-asset-item id="cityModel" src="assets/images/robob.gltf"></a-asset-item>
+      </a-assets>
+      <a-entity gltf-model="#cityModel" modify-materials position="1 1 -6"></a-entity>
+    </a-scene>
+<!-- 
+    <a-scene >
+          
+        <a-image src="assets/images/flower-purple-lical-blosso.jpg" width="3" height="1.5" position="1 2" rotation="50 30 40"></a-image>
+         <a-assets>
+            <a-cubemap id="pisa">
+
+           <img src="https://threejs.org/examples/textures/cube/pisa/px.png">
+            <img src="https://threejs.org/examples/textures/cube/pisa/nx.png">
+            <img src="https://threejs.org/examples/textures/cube/pisa/py.png">
+            <img src="https://threejs.org/examples/textures/cube/pisa/ny.png">
+            <img src="https://threejs.org/examples/textures/cube/pisa/pz.png">
+            <img src="https://threejs.org/examples/textures/cube/pisa/nz.png"> 
+            </a-cubemap>
+        </a-assets>
+         
+        <a-light type="probe" envMap="#pisa"></a-light>
+        <a-light type="probe" envMap="#pisa"></a-light>
+
+
+        <a-plane 2 color="red"></a-plane>
+        <a-camera position="1 1 3" rotation="0 45 0" color="#4CC3D9" > </a-camera>
+       <a-dialog-buttons position="-1 1.5 -3" rotation="0 45 0" color="#4CC3D9"></a-dialog-buttons>
+      <a-box position="-3 1 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="1 2.25 -3" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder
+        position="3 0.75 -3"
+        radius="0.5"
+        height="3.5"
+        color="#FFC65D"
+      ></a-cylinder>
+      <a-plane
+        position="2 0 -6"
+        rotation="-90 0 0"
+        width="6"
+        height="8"
+        color="#508beb"
+      ></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+
+   -->
+  </body>
+</html>
